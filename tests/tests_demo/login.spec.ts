@@ -31,7 +31,7 @@ test('login blank user/pass', async ({ page }) => {
     await verifyLoginBlank(page);
 });
 
-test.only('logout success', async ({ page }) => {
+test('logout success', async ({ page }) => {
 
     await login(page,'testuser', 'password123');
 
