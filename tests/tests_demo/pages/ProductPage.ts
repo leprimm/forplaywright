@@ -66,7 +66,7 @@ export class ProductPage {
     }
 
     async clickRemove(rowId: number){
-       await this.page.locator(`[onclick="removeItem(${rowId})"]`).click();
+       await this.page.locator(`[onclick="removeItem(${rowId})"]`).click({ force: true });
     }
 
     async typeSearchBox(keyword: string){
