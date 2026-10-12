@@ -26,10 +26,10 @@ export async function verifyLoginError(page: Page) {
 }
 
 export async function verifyLoginBlank(page: Page) {
-    await expect(page.getByTestId('username-error')).toBeVisible();
-    await expect(page.getByTestId('username-error')).toHaveText('Username is required.');
-    await expect(page.getByTestId('password-error')).toBeVisible();
-    await expect(page.getByTestId('password-error')).toHaveText('Password is required.');
+    await expect(page.locator('#username-error')).toBeVisible();
+    await expect(page.locator('#username-error')).toHaveText('Username is required.');
+    await expect(page.locator('#password-error')).toBeVisible();
+    await expect(page.locator('#password-error')).toHaveText('Password is required.');
     await expect(page).toHaveURL('');
 }
 
