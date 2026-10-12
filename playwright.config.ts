@@ -33,7 +33,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
 
     launchOptions: {
-      slowMo: 2000,
+      slowMo: 1000,
     },
   },
 
